@@ -1,0 +1,17 @@
+@import 'context';
+
+:local {
+  .root {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    max-width: $large-content-max-width;
+    margin: 0 auto;
+
+    font-size: inherit;
+    height: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-decoration: inherit;
+  }
+}

@@ -1,0 +1,44 @@
+@import 'context';
+
+:local {
+  .root {
+    font-size: inherit;
+    height: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-decoration: inherit;
+    padding: 0 $base-padding;
+  }
+
+  .root__item {
+    position: relative;
+    display: inline-block;
+    height: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-decoration: inherit;
+    min-width: $base-padding * 2;
+  }
+
+  .root__lbl {
+    height: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .root svg {
+    position: absolute;
+    left: $base-padding;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    fill: white;
+    width: auto;
+  }
+
+  .root svg + .lnk-cmp__lbl {
+    padding: 0 0 0 $base-padding * 4;
+  }
+}

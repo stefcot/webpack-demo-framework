@@ -1,0 +1,38 @@
+@import 'context';
+
+:local {
+  .root {
+    background-color: $medium-grey;
+    color: $very-dark-grey;
+    padding: $base-spacing / 5;
+    margin: 0 0 $base-spacing;
+    width: 100%;
+
+    h2 {
+      @extend %gotham-xnarrow-book;
+      background-color: $medium-grey;
+      color: $white;
+      font-size: $base-spacing * 3;
+      padding: $base-spacing / 2 $base-spacing;
+      margin: 0;
+      width: 100%;
+    }
+
+    section {
+      background-color: $white;
+      padding: $base-spacing;
+    }
+
+    p {
+      @extend %ptserif;
+      color: $very-dark-grey;
+      font-size: $base-spacing * 1.5;
+      margin: 0 0 $base-spacing;
+      width: 100%;
+    }
+
+    p:last-of-type {
+      margin: 0;
+    }
+  }
+}

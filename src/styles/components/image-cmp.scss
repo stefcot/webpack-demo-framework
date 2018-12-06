@@ -1,0 +1,35 @@
+@import 'context';
+
+:local {
+  .root {
+    font-size: inherit;
+    height: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-decoration: inherit;
+    padding: 0;
+  }
+
+  .premium {
+    border-top: 4px solid $yellow;
+  }
+
+  img {
+    display: block;
+  }
+
+  .img-cmp__lnk {
+    position: relative;
+    display: inline-block;
+    height: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  figcaption {
+    width: 100%;
+    display: block;
+  }
+}

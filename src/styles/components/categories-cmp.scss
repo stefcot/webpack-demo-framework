@@ -1,0 +1,18 @@
+@import 'context';
+
+:local {
+  .root {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: $nav-height;
+    height: $nav-height;
+    background-color: $red;
+    font-size: $base-spacing * 1.7;
+    color: $white;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-decoration: none;
+  }
+}

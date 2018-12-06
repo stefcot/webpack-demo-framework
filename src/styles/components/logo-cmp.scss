@@ -1,0 +1,28 @@
+@import 'context';
+
+:local {
+  .root {
+    display: inline-block;
+    zoom: 1;
+    color: #fff;
+    line-height: 12px;
+    transform: translate(-50%, -50%);
+    padding: 0 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+
+  img {
+    width: auto;
+  }
+
+  .category {
+    position: relative;
+    left: 0;
+    font-weight: 400;
+    bottom: 26px;
+    text-decoration: none;
+    text-decoration-color: $red;
+  }
+}

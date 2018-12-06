@@ -1,0 +1,14 @@
+@import 'context';
+
+:local {
+  .root {
+    background-color: $very-light-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: $base-spacing auto;
+    min-height: $base-spacing * 9;
+    max-width: $large-content-max-width;
+    width: 100%;
+  }
+}

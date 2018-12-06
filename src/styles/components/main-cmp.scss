@@ -1,0 +1,14 @@
+@import 'context';
+
+:local {
+  .root {
+    background-color: transparent;
+    color: $very-dark-grey;
+    padding: $base-spacing 0 0 0;
+    margin: 0 auto $base-spacing * 2;
+    max-width: $large-content-max-width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
