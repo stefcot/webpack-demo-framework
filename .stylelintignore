@@ -1,5 +1,5 @@
 dist/*
 node_modules/*
-src/styles/compass-mixins/*
-src/styles/modules/*
-src/styles/partials/*
+src/scss/compass-mixins/*
+src/scss/modules/*
+src/scss/partials/*
