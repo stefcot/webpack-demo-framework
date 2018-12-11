@@ -9,24 +9,24 @@ const htmlToReactParser = new Parser();
 console.log('Box - styles: ', styles);
 
 const Box = ({ name, title, description, children }) => (
-    <article className={styles['root']} id={name}>
-        <h2>{title}</h2>
-        <section>{htmlToReactParser.parse(description)}</section>
-        {children}
-    </article>
+  <article className={styles['root']} id={name}>
+    <h2>{title}</h2>
+    <section>{htmlToReactParser.parse(description)}</section>
+    {children}
+  </article>
 );
 
 Box.defaultProps = {
-    children: [],
-    description: '',
-    title: '',
+  children: [],
+  description: '',
+  title: ''
 };
 
 Box.propTypes = {
-    children: PropTypes.array,
-    description: PropTypes.string,
-    name: PropTypes.string.isRequired,
-    title: PropTypes.string,
+  children: PropTypes.array,
+  description: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  title: PropTypes.string
 };
 
 export default Box;

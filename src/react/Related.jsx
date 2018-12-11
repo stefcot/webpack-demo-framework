@@ -10,31 +10,31 @@ const styles = require('../styles/components/related-cmp.scss');
 console.log('Related - styles: ', styles);
 
 const Related = ({ list }) => (
-    <ul className={styles['root']}>
-        {list.map(item => {
-            const classes = classNames(styles['icon'], 'icon-plus', {
-                [styles['premium']]: item.isPremium === true,
-            });
-            const randomId = Math.round(Math.random() * 100000);
+  <ul className={styles['root']}>
+    {list.map(item => {
+      const classes = classNames(styles['icon'], 'icon-plus', {
+        [styles['premium']]: item.isPremium === true
+      });
+      const randomId = Math.round(Math.random() * 100000);
 
-            return (
-                <li key={randomId} className={styles['item']}>
-                    <a href={item.contentPath} className={styles['link']}>
-                        <i className={classes}>{IconFactory(IconList['plus'])}</i>
-                        {htmlToReactParser.parse(item.title)}
-                    </a>
-                </li>
-            );
-        })}
-    </ul>
+      return (
+        <li key={randomId} className={styles['item']}>
+          <a href={item.contentPath} className={styles['link']}>
+            <i className={classes}>{IconFactory(IconList['plus'])}</i>
+            {htmlToReactParser.parse(item.title)}
+          </a>
+        </li>
+      );
+    })}
+  </ul>
 );
 
 Related.defaultProps = {
-    list: () => [],
+  list: () => []
 };
 
 Related.propTypes = {
-    list: PropTypes.array,
+  list: PropTypes.array
 };
 
 export default Related;

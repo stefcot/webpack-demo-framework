@@ -12,19 +12,19 @@ import TwitterIcon from '../assets/svg/twitter.svg';
 import UserIcon from '../assets/svg/user.svg';
 
 export function IconFactory(SVGComponent) {
-    console.log('IconFactory - SVGComponent: ', SVGComponent);
-    return ReactHtmlParser(SVGComponent);
+  console.log('IconFactory - SVGComponent: ', SVGComponent);
+  return ReactHtmlParser(SVGComponent);
 }
 
 export const IconList = {
-    bubbles: BubblesIcon,
-    camera: CameraIcon,
-    facebook: FbIcon,
-    folder: FolderIcon,
-    home: HomeIcon,
-    play: PlayIcon,
-    plus: PlusIcon,
-    search: SearchIcon,
-    twitter: TwitterIcon,
-    user: UserIcon,
+  bubbles: BubblesIcon,
+  camera: CameraIcon,
+  facebook: FbIcon,
+  folder: FolderIcon,
+  home: HomeIcon,
+  play: PlayIcon,
+  plus: PlusIcon,
+  search: SearchIcon,
+  twitter: TwitterIcon,
+  user: UserIcon
 };

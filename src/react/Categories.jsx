@@ -6,19 +6,23 @@ import Links from './Links';
 const styles = require('../styles/components/categories-cmp.scss');
 
 const Categories = ({ page, nav }) => (
-    <nav className={styles['root']} id={`cat-nav-cmp-${page}`} aria-labelledby={`cat-nav-cmp-${page}`}>
-        <Links name={`cat-lnks-cmp-${page}`} nav={nav} />
-    </nav>
+  <nav
+    className={styles['root']}
+    id={`cat-nav-cmp-${page}`}
+    aria-labelledby={`cat-nav-cmp-${page}`}
+  >
+    <Links name={`cat-lnks-cmp-${page}`} nav={nav} />
+  </nav>
 );
 
 Categories.defaultProps = {
-    page: '',
-    nav: [],
+  page: '',
+  nav: []
 };
 
 Categories.propTypes = {
-    nav: PropTypes.array,
-    page: PropTypes.string,
+  nav: PropTypes.array,
+  page: PropTypes.string
 };
 
 export default Categories;

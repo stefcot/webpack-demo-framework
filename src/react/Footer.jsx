@@ -7,17 +7,17 @@ const styles = require('../styles/components/footer-cmp.scss');
 console.log('Footer - styles: ', styles);
 
 const Footer = ({ name }) => (
-    <footer className={styles['root']} id={name}>
-        <Links name={`ftr-nav-cmp-${name}`} />
-    </footer>
+  <footer className={styles['root']} id={name}>
+    <Links name={`ftr-nav-cmp-${name}`} />
+  </footer>
 );
 
 Footer.defaultProps = {
-    name: '',
+  name: ''
 };
 
 Footer.propTypes = {
-    name: PropTypes.string,
+  name: PropTypes.string
 };
 
 export default Footer;

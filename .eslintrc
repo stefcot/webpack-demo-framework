@@ -66,15 +66,6 @@
     "react/react-in-jsx-scope": 1,
     "react/self-closing-comp": 1,
     "react/sort-comp": 1,
-    "strict": 0,
-    "prettier/prettier": [
-      "error",
-      {
-        "printWidth": 120,
-        "tabWidth": 4,
-        "singleQuote": true,
-        "trailingComma": "all"
-      }
-    ]
+    "strict": 0
   }
 }
