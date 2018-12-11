@@ -99,7 +99,7 @@
     ],
     "*.scss": [
       "npm run lint:css",
-      "stylelint src/styles/ --fix",
+      "stylelint src/scss/ --fix",
       "git add"
     ]
   },
