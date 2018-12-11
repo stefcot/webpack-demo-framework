@@ -5,7 +5,7 @@ import PreHeader from './PreHeader';
 import Logo from './Logo';
 import Categories from './Categories';
 
-const styles = require('../../scss/components/header-cmp.scss');
+const styles = require('styles/header-cmp.scss');
 
 console.log('Header - scss: ', styles);
 

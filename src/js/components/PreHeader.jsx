@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Links from './Links';
 
-const styles = require('../../scss/components/preheader-cmp.scss');
+const styles = require('styles/preheader-cmp.scss');
 
 console.log('PreHeader - scss: ', styles);
 

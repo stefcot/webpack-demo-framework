@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Links from './Links';
 
-const styles = require('../../scss/components/categories-cmp.scss');
+const styles = require('styles/categories-cmp.scss');
 
 const Categories = ({ page, nav }) => (
   <nav

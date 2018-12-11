@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const styles = require('../../scss/components/aside-cmp.scss');
+const styles = require('styles/aside-cmp.scss');
 
 console.log('Aside - scss: ', styles);
 

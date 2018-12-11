@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Article from './Article';
 
-const styles = require('../../scss/components/article-group-cmp.scss');
+const styles = require('styles/article-group-cmp.scss');
 
 console.log('ArticleGroup - scss: ', styles);
 

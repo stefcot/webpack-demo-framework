@@ -32,17 +32,23 @@
   "settings": {
     "react": {
       "version": "16.6.3"
-    }
+    },
+    "import/resolver": "webpack"
   },
   "rules": {
     "import/imports-first": ["error", "absolute-first"],
+    "import/extensions": [1, {
+      "js": "never",
+      "jsx": "never",
+      "scss": "never"
+    }],
     "import/newline-after-import": "error",
     "import/no-webpack-loader-syntax": "warn",
     "import/no-unresolved": "warn",
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [".js", ".jsx"]
+        "extensions": [".js", ".jsx", ".scss"]
       }
     ],
     "react/jsx-uses-react": "error",

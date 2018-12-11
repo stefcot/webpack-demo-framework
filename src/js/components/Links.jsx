@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from './Link';
 
-const styles = require('../../scss/components/links-cmp.scss');
+const styles = require('styles/links-cmp.scss');
 
 console.log('Links - scss: ', styles);
 

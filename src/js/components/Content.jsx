@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import PropTypes from 'prop-types';
 import Loader from './Loader';
 
-const styles = require('../../scss/components/content-cmp.scss');
+const styles = require('styles/content-cmp.scss');
 
 console.log('Content - scss: ', styles);
 

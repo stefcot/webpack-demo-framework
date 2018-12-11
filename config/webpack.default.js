@@ -17,7 +17,20 @@ module.exports = env => {
       publicPath: '/dist/'
     },
     resolve: {
-      extensions: ['*', '.js', '.jsx', '.json']
+      extensions: ['*', '.js', '.jsx', '.json', '.scss'],
+      alias: {
+        '@': path.resolve(__dirname, '../src/js'),
+        styles: path.resolve(__dirname, '../src/scss/components'),
+        components: path.resolve(__dirname, '../src/js/components'),
+        atoms: path.resolve(__dirname, '../src/js/components/atoms'),
+        molecules: path.resolve(__dirname, '../src/js/components/molecules'),
+        organisms: path.resolve(__dirname, '../src/js/components/organisms'),
+        templates: path.resolve(__dirname, '../src/js/components/templates'),
+        images: path.resolve(__dirname, '../src/assets/images'),
+        svg: path.resolve(__dirname, '../src/assets/svg'),
+        fonts: path.resolve(__dirname, '../src/assets/fonts')
+      },
+      modules: ['node_modules', path.resolve(__dirname, '../node_modules')]
     },
     module: {
       rules: [
@@ -161,7 +174,7 @@ module.exports = env => {
       }),
       new InlineManifestWebpackPlugin(),
       // Lint scss files on save
-      new StyleLintPlugin(),
+      new StyleLintPlugin()
     ],
     optimization: {
       runtimeChunk: {
