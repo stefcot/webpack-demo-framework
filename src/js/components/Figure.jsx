@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Image from './Image';
-import { IconFactory, IconList } from './IconFactory';
+import { IconFactory, IconList } from '../utils/IconFactory';
 
-const styles = require('../scss/components/figure-cmp.scss');
+const styles = require('../../scss/components/figure-cmp.scss');
 
 console.log('Figure - scss: ', styles);
 

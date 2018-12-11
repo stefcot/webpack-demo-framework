@@ -6,7 +6,7 @@ import Aside from './Aside';
 import Footer from './Footer';
 import Box from './Box';
 
-const styles = require('../scss/components/page-cmp.scss');
+const styles = require('../../scss/components/page-cmp.scss');
 
 const Page = ({ page, header, main, children, footer }) => (
   <div className={styles['root']} id={page}>

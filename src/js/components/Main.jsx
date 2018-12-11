@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Content from './Content';
 
-const styles = require('../scss/components/main-cmp.scss');
+const styles = require('../../scss/components/main-cmp.scss');
 
 const Main = ({ name, page, content, children }) => (
   <main className={styles['root']} id={name}>

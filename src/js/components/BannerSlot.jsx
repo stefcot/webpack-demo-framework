@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const styles = require('../scss/components/banner-cmp.scss');
+const styles = require('../../scss/components/banner-cmp.scss');
 
 const BannerSlot = ({ name, children }) => (
   <div className={styles['root']} id={name}>

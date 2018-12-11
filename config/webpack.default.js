@@ -8,7 +8,7 @@ const StyleLintPlugin = require('stylelint-webpack-plugin');
 module.exports = env => {
   return {
     entry: {
-      app: [path.resolve(__dirname, '../src/index.js')],
+      app: [path.resolve(__dirname, '../src/js/index.js')],
       vendor: ['jquery']
     },
     output: {

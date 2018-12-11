@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Parser } from 'html-to-react';
-import { IconList, IconFactory } from './IconFactory';
+import { IconList, IconFactory } from '../utils/IconFactory';
 
-const styles = require('../scss/components/link-cmp.scss');
+const styles = require('../../scss/components/link-cmp.scss');
 
 const htmlToReactParser = new Parser();
 

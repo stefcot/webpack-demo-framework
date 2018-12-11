@@ -1,9 +1,9 @@
 import React from 'react';
 import ie from 'ie-version';
 
-import SvgLogo from '../assets/images/logo.svg';
+import SvgLogo from '../../assets/images/logo.svg';
 
-const styles = require('../scss/components/logo-cmp.scss');
+const styles = require('../../scss/components/logo-cmp.scss');
 
 const Logo = () => (
   <h1

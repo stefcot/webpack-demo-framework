@@ -5,7 +5,7 @@ import Figure from './Figure';
 import Related from './Related';
 
 const htmlToReactParser = new Parser();
-const styles = require('../scss/components/article-cmp.scss');
+const styles = require('../../scss/components/article-cmp.scss');
 
 console.log('Article - scss: ', styles);
 
