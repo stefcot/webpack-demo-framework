@@ -111,14 +111,12 @@
     "dev": "npm run server && npm run build",
     "dist": "NODE_ENV=production npm run build",
     "precommit": "NODE_ENV=production lint-staged",
-    "validate": "npm run lint && prettier --list-different ./src/**/*.{js,jsx,scss}",
     "validate:css": "npm run lint:css && prettier --list-different ./src/**/*.scss",
     "validate:js": "npm run lint:js && prettier --list-different ./src/**/*.{js,jsx}",
     "lint:js": "npm run eslint-check && npm run format:js && node_modules/.bin/eslint --config ./.eslintrc ./src/js/**/*.jsx",
     "lint:css": "npm run stylelint-check && npm run format:css && node_modules/.bin/stylelint --config ./.stylelintrc ./src/scss/**/*.scss",
     "eslint-check": "node_modules/.bin/eslint --config ./.eslintrc --print-config . | eslint-config-prettier-check",
     "stylelint-check": "stylelint-config-prettier-check",
-    "format": "prettier --write './src/**/*.{js,jsx,scss,json}'",
     "format:js": "prettier-eslint --write './src/js/**/*.{js,jsx}'",
     "format:css": "prettier-stylelint --write './src/scss/**/*.scss,!./src/styles/compass-mixins/**/*.scss'"
   }
