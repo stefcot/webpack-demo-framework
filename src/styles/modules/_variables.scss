@@ -18,11 +18,6 @@ $font-family-puce-chiffre: $puce-chiffre, Arial, serif;
 $font-directory: '../../assets/fonts/';
 $images-directory: '../../assets/images/';
 
-// FONTS - SIZE
-$mobile-txt-size: 1.4em;
-$desktop-txt-size: 1.9em;
-$default-txt-size: 2em;
-
 // LAYOUT - HEADER
 $header-size: 3em;
 
@@ -45,3 +40,9 @@ $nav-height: 30px;
 // LAYOUT - HEADER
 $nav-height-expanded: 150px;
 $nav-height-collapsed: 50px;
+
+// FONTS - SIZE
+$mobile-txt-size: 1.4em;
+$desktop-txt-size: 1.9em;
+$default-txt-size: 2em;
+$vertical-white-space: $base-spacing * 2;

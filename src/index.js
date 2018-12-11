@@ -7,13 +7,13 @@ const config = require('./assets/json/Page');
 ReactDOM.render(<App {...config} />, document.getElementById('root'));
 
 if (process.env.isProduction) {
-  console.log('production');
+    console.log('production');
 }
 
 if (!process.env.isProduction) {
-  console.log('development');
+    console.log('development');
 }
 
 if (!process.env.isProduction && module.hot) {
-  module.hot.accept();
+    module.hot.accept();
 }

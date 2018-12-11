@@ -58,12 +58,16 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+      hot: true
+  },
+  watch: true,
+  watchOptions: {
+      ignored: ['config/**/*.js', 'node_modules'],
+  },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     // allows Module naming in developpement mode
     new webpack.NamedModulesPlugin()
-  ],
-  devServer: {
-    hot: true
-  }
+  ]
 };

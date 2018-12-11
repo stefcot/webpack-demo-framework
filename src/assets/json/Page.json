@@ -169,27 +169,27 @@
       "nav": [
         {
           "label": "Nouvelles mobilités",
-          "url": "/dossiers/societe/velo-libre-service-velib/"
+          "contentPath": "/dossiers/societe/velo-libre-service-velib/"
         },
         {
           "label": "Alzheimer : protégez-vous",
-          "url": "/dossiers/sante/alzheimer-memoire/"
+          "contentPath": "/dossiers/sante/alzheimer-memoire/"
         },
         {
           "label": "Spécial grammaire",
-          "url": "/societe/la-methode-grevisse/"
+          "contentPath": "/societe/la-methode-grevisse/"
         },
         {
           "label": "À mi-mandat, l'Amérique divisée",
-          "url": "/dossiers/monde/midterms-2018-elections-mi-mandat-etats-unis/"
+          "contentPath": "/dossiers/monde/midterms-2018-elections-mi-mandat-etats-unis/"
         },
         {
           "label": "Italie-UE : le bras de fer",
-          "url": "/dossiers/monde/italie-impasse-politique/"
+          "contentPath": "/dossiers/monde/italie-impasse-politique/"
         },
         {
           "label": "Tous les prix littéraires",
-          "url": "/livres/"
+          "contentPath": "/livres/"
         }
       ]
     },
@@ -250,7 +250,7 @@
           },
           {
             "type": "full-mini",
-            "title": "EN IMAGES. Gilets jaunes&nbsp;: l'escalade de la violence",
+            "title": "<span class=\"glbl-red\">EN IMAGES.</span> Gilets jaunes&nbsp;: l'escalade de la violence",
             "author": "Le Point.fr",
             "isPremium": false,
             "contentPath": "/societe/en-images-gilets-jaunes-l-escalade-de-la-violence-01-12-2018-2275792_23.php",
@@ -403,10 +403,10 @@
         "list": [
           {
             "type": "full",
-            "title": "/monde/affaire-khashoggi-ces-messages-qui-incriminent-mbs-02-12-2018-2275912_24.php",
+            "title": "Affaire Khashoggi, ces messages qui incriminent",
             "author": "Armin Arefi",
             "isPremium": false,
-            "contentPath": "/societe/gilets-jaunes-378-gardes-a-vue-et-133-blesses-apres-les-violences-a-paris-02-12-2018-2275891_23.php",
+            "contentPath": "/monde/affaire-khashoggi-ces-messages-qui-incriminent-mbs-02-12-2018-2275912_24.php",
             "lead": "D'après le «&nbsp;Wall Street Journal&nbsp;», la CIA a intercepté&nbsp;11&nbsp;messages envoyés par le prince héritier à l'homme qui a supervisé l'assassinat du journaliste saoudien.",
             "comments": {
               "number": 4
@@ -488,7 +488,7 @@
               "width": 200,
               "height": 133,
               "legend": "",
-              "icon": ""
+              "icon": "folder"
             },
             "related": []
           }
@@ -752,7 +752,7 @@
               "width": 200,
               "height": 133,
               "legend": "",
-              "icon": ""
+              "icon": "folder"
             },
             "related": [
               {
@@ -893,7 +893,7 @@
               "width": 200,
               "height": 133,
               "legend": "",
-              "icon": ""
+              "icon": "folder"
             },
             "related": [
               {
@@ -950,7 +950,7 @@
               "width": 200,
               "height": 133,
               "legend": "",
-              "icon": ""
+              "icon": "folder"
             },
             "related": [
               {

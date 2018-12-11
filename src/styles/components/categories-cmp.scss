@@ -2,17 +2,24 @@
 
 :local {
   .root {
-    position: absolute;
+    background-color: $red;
     bottom: 0;
+    color: $white;
+    font-size: $base-spacing * 1.7;
+    height: $nav-height;
     left: 0;
     line-height: $nav-height;
-    height: $nav-height;
-    background-color: $red;
-    font-size: $base-spacing * 1.7;
-    color: $white;
-    padding: 0;
     margin: 0;
-    width: 100%;
+    padding: 0;
+    position: absolute;
     text-decoration: none;
+    width: 100%;
+  }
+
+  @media (prefers-color-scheme: light) {
+    .root {
+      background: white;
+      color: black;
+    }
   }
 }

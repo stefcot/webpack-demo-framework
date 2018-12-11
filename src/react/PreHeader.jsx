@@ -7,20 +7,20 @@ const styles = require('../styles/components/preheader-cmp.scss');
 
 console.log('PreHeader - styles: ', styles);
 
-const PreHeader = ({ name, nav }) => (
-  <nav className={styles['root']} id={name}>
-    <Links name={`preheader-lnks-cmp-${name}`} nav={nav} />
-  </nav>
+const PreHeader = ({ page, nav }) => (
+    <nav className={styles['root']} id={`prehader-nav-cmp-${page}`} aria-labelledby={`prehader-nav-cmp-${page}`}>
+        <Links name={`preheader-lnks-cmp-${page}`} nav={nav} />
+    </nav>
 );
 
 PreHeader.defaultProps = {
-  name: '',
-  nav: []
+    page: '',
+    nav: [],
 };
 
 PreHeader.propTypes = {
-  name: PropTypes.string,
-  nav: PropTypes.array
+    nav: PropTypes.array,
+    page: PropTypes.string,
 };
 
 export default PreHeader;

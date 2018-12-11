@@ -9,22 +9,22 @@ const styles = require('../styles/components/header-cmp.scss');
 
 console.log('Header - styles: ', styles);
 
-const Header = ({ name, preHeader, categories }) => (
-  <header className={styles['root']} id={name}>
-    <PreHeader name={`websites-nav-cmp-${name}`} {...preHeader} />
-    <Logo />
-    <Categories name={`cat-nav-cmp-${name}`} {...categories} />
-  </header>
+const Header = ({ page, preHeader, categories }) => (
+    <header className={styles['root']} id={`hdr-cmp-${page}`}>
+        <PreHeader name={`websites-nav-cmp-${page}`} {...preHeader} />
+        <Logo />
+        <Categories name={`cat-nav-cmp-${page}`} {...categories} />
+    </header>
 );
 
 Header.defaultProps = {
-  name: ''
+    page: '',
 };
 
 Header.propTypes = {
-  categories: PropTypes.string.isRequired,
-  name: PropTypes.string,
-  preHeader: PropTypes.string.isRequired
+    categories: PropTypes.object.isRequired,
+    page: PropTypes.string,
+    preHeader: PropTypes.object.isRequired,
 };
 
 export default Header;

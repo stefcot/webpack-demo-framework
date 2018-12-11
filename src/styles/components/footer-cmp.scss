@@ -2,9 +2,9 @@
 
 :local {
   .root {
-    position: relative;
-    padding: $base-padding * 4 0;
     background-color: $very-light-grey;
     min-height: $bar-height;
+    padding: $base-padding * 4 0;
+    position: relative;
   }
 }

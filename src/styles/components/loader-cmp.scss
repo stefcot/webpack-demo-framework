@@ -2,8 +2,8 @@
 
 :local {
   .css-spinner {
-    margin: 20px 60px;
     display: inline-block;
+    margin: 20px 60px;
   }
 
   .name {
@@ -11,30 +11,29 @@
     transition: opacity 0.3s ease-in;
   }
 
-  .css-spinner:hover > .name {
+  .css-spinner:focus > .name {
     opacity: 1;
   }
 
   .clickable {
-    cursor: pointer !important;
+    cursor: pointer;
   }
 
   .lds-dual-ring {
     display: inline-block;
-    width: 64px;
     height: 64px;
+    width: 64px;
   }
 
-  .lds-dual-ring:after {
-    content: ' ';
-    display: block;
-    width: 46px;
-    height: 46px;
-    margin: 1px;
-    border-radius: 50%;
+  .lds-anim-obj {
+    animation: lds-dual-ring 1.2s linear infinite;
     border: 5px solid;
     border-color: $red transparent $red transparent;
-    animation: lds-dual-ring 1.2s linear infinite;
+    border-radius: 50%;
+    display: block;
+    height: 46px;
+    margin: 1px;
+    width: 46px;
   }
 
   @keyframes lds-dual-ring {
@@ -43,6 +42,17 @@
     }
     100% {
       transform: rotate(360deg);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .name {
+      opacity: 1;
+      transition: none;
+    }
+
+    .lds-anim-obj {
+      animation: none;
     }
   }
 }

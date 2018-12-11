@@ -2,16 +2,15 @@
 
 :local {
   .root {
+    color: inherit;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: left;
-    max-width: $large-content-max-width;
-    margin: 0 auto;
-
     font-size: inherit;
     height: inherit;
+    justify-content: left;
     line-height: inherit;
-    color: inherit;
+    margin: 0 auto;
+    max-width: $large-content-max-width;
     text-decoration: inherit;
   }
 }

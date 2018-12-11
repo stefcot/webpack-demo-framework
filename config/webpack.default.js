@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const InlineManifestWebpackPlugin = require('inline-manifest-webpack-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = env => {
   return {
@@ -76,6 +77,33 @@ module.exports = env => {
             }
           ],
           include: [path.resolve(__dirname, '../src/assets/fonts/')]
+        },
+        {
+          test: /\.(svg)$/,
+          use: [
+            {
+              loader: 'raw-loader',
+              options: {
+                name: 'assets/images/svg/[name].[ext]'
+              }
+            },
+            {
+              loader: 'svgo-loader'
+            }
+          ],
+          include: [path.resolve(__dirname, '../src/assets/svg/')]
+        },
+        {
+          test: /\.(svg)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: 'assets/images/svg/[name].[ext]'
+              }
+            }
+          ],
+          include: [path.resolve(__dirname, '../src/assets/images/')]
         }
       ]
     },
@@ -131,7 +159,9 @@ module.exports = env => {
     <meta name="msapplication-TileImage" content="assets/images/icons/favicon-144.png">
     <meta name="msapplication-TileColor" content="#FFFFFF">`
       }),
-      new InlineManifestWebpackPlugin()
+      new InlineManifestWebpackPlugin(),
+      // Lint scss files on save
+      new StyleLintPlugin(),
     ],
     optimization: {
       runtimeChunk: {

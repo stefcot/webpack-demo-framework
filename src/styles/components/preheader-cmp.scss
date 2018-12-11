@@ -2,21 +2,21 @@
 
 :local {
   .root {
-    position: absolute;
-    top: 0;
-    left: 0;
-    line-height: 2.2;
-    height: $nav-height;
     background-color: $black;
     color: $white;
     font-size: 15px;
-    padding: 0;
+    height: $nav-height;
+    left: 0;
+    line-height: 2.2;
     margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
     width: 100%;
 
     li {
-      padding: 0 $base-padding * 2;
       border-left: 1px solid $very-dark-grey;
+      padding: 0 $base-padding * 2;
     }
   }
 }

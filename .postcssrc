@@ -7,6 +7,6 @@
     "postcss-import": {},
     "postcss-preset-env": {},
     "postcss-prettify": {},
-    "cssnano": {}
+    "cssnano": {},
   }
 }

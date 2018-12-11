@@ -2,43 +2,44 @@
 
 :local {
   .root {
+    color: inherit;
     font-size: inherit;
     height: inherit;
     line-height: inherit;
-    color: inherit;
-    text-decoration: inherit;
+    outline: 0 none;
     padding: 0 $base-padding;
+    text-decoration: inherit;
+
+    svg {
+      fill: white;
+      left: $base-padding;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(0.5);
+      width: auto;
+    }
   }
 
   .root__item {
-    position: relative;
-    display: inline-block;
-    height: inherit;
-    font-size: inherit;
-    line-height: inherit;
     color: inherit;
-    text-decoration: inherit;
+    display: inline-block;
+    font-size: inherit;
+    height: inherit;
+    line-height: inherit;
     min-width: $base-padding * 2;
+    position: relative;
+    text-decoration: inherit;
   }
 
   .root__lbl {
-    height: inherit;
-    font-size: inherit;
-    line-height: inherit;
     color: inherit;
+    font-size: inherit;
+    height: inherit;
+    line-height: inherit;
     text-decoration: inherit;
   }
 
-  .root svg {
-    position: absolute;
-    left: $base-padding;
-    top: 50%;
-    transform: translate(-50%, -50%) scale(0.5);
-    fill: white;
-    width: auto;
-  }
-
-  .root svg + .lnk-cmp__lbl {
+  svg + .lnk-cmp__lbl {
     padding: 0 0 0 $base-padding * 4;
   }
 }

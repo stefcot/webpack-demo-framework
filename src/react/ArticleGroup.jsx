@@ -7,37 +7,37 @@ const styles = require('../styles/components/article-group-cmp.scss');
 console.log('ArticleGroup - styles: ', styles);
 
 class ArticleGroup extends React.Component {
-  shouldComponentUpdate() {
-    return false;
-  }
+    shouldComponentUpdate() {
+        return false;
+    }
 
-  render() {
-    const { list, index } = this.props;
+    render() {
+        const { list, index } = this.props;
 
-    return (
-      <ul className={styles['root']} id={`art-grp-cmp-${index}`}>
-        {list.map(item => {
-          const { type } = item;
-          const ramdom = Math.round(Math.random() * 100);
+        return (
+            <ul className={styles['root']} role="region" aria-labelledby={`art-grp-cmp-${index}`}>
+                {list.map(item => {
+                    const { type } = item;
+                    const ramdom = Math.round(Math.random() * 10000);
 
-          return (
-            <li className={styles[type]} key={`art-grp-item-cmp-${ramdom}`}>
-              <Article index={ramdom} key={`art-cmp-${ramdom}`} {...item} />
-            </li>
-          );
-        })}
-      </ul>
-    );
-  }
+                    return (
+                        <li className={styles[type]} key={`art-grp-item-cmp-${ramdom}`}>
+                            <Article index={ramdom} key={`art-cmp-${ramdom}`} {...item} />
+                        </li>
+                    );
+                })}
+            </ul>
+        );
+    }
 }
 
 ArticleGroup.defaultProps = {
-  list: []
+    list: [],
 };
 
 ArticleGroup.propTypes = {
-  index: PropTypes.number.isRequired,
-  list: PropTypes.array
+    index: PropTypes.number.isRequired,
+    list: PropTypes.array,
 };
 
 export default ArticleGroup;
