@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Header from './Header';
-import Main from './Main';
-import Aside from './Aside';
-import Footer from './Footer';
-import Box from './Box';
+import Header from './organisms/Header';
+import Main from './organisms/Main';
+import Aside from './organisms/Aside';
+import Footer from './organisms/Footer';
+import Box from './molecules/Box';
 
 const styles = require('styles/page-cmp.scss');
 

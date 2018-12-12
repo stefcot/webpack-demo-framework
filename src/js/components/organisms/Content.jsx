@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import PropTypes from 'prop-types';
-import Loader from './Loader';
+import Loader from '../atoms/Loader';
 
 const styles = require('styles/content-cmp.scss');
 

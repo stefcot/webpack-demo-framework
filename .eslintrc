@@ -45,14 +45,6 @@
     "import/newline-after-import": "error",
     "import/no-webpack-loader-syntax": "warn",
     "import/no-unresolved": "warn",
-    "react/jsx-filename-extension": [
-      1,
-      {
-        "extensions": [".js", ".jsx", ".scss"]
-      }
-    ],
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
     "dot-notation": "off",
     "curly": ["error", "all"],
     "no-console": 0,
@@ -63,7 +55,14 @@
     "react/forbid-prop-types": 0,
     "react/jsx-boolean-value": 1,
     "react/jsx-no-undef": 1,
-    "react/sort-prop-types": 1,
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx", ".scss"]
+      }
+    ],
     "react/no-danger": 0,
     "react/no-did-mount-set-state": 1,
     "react/no-did-update-set-state": 1,
@@ -72,6 +71,7 @@
     "react/react-in-jsx-scope": 1,
     "react/self-closing-comp": 1,
     "react/sort-comp": 1,
+    "react/sort-prop-types": 1,
     "strict": 0
   }
 }

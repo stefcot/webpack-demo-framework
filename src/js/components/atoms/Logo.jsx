@@ -1,7 +1,7 @@
 import React from 'react';
 import ie from 'ie-version';
 
-import SvgLogo from '../../assets/images/logo.svg';
+import SvgLogo from '../../../assets/images/logo.svg';
 
 const styles = require('styles/logo-cmp.scss');
 

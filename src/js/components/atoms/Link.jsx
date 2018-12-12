@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Parser } from 'html-to-react';
-import { IconList, IconFactory } from '../utils/IconFactory';
+import { IconList, IconFactory } from '../../utils/IconFactory';
 
 const styles = require('styles/link-cmp.scss');
 
