@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Parser } from 'html-to-react';
-import Figure from '../molecules/Figure';
-import Related from '../molecules/Related';
+import Figure from 'molecules/Figure';
+import Related from 'molecules/Related';
 
 const htmlToReactParser = new Parser();
-const styles = require('styles/article-cmp.scss');
+const styles = require('./article-cmp.scss');
 
 console.log('Article - scss: ', styles);
 

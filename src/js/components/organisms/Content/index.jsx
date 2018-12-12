@@ -1,15 +1,15 @@
 import React, { Suspense, lazy } from 'react';
 import PropTypes from 'prop-types';
-import Loader from '../atoms/Loader';
+import Loader from 'atoms/Loader';
 
-const styles = require('styles/content-cmp.scss');
+const styles = require('./content-cmp');
 
 console.log('Content - scss: ', styles);
 
 class Content extends React.Component {
   static getComponentByName(blockProperties, idx) {
     const TagName = blockProperties.type;
-    const Component = lazy(() => import(`./${TagName}`));
+    const Component = lazy(() => import(`organisms/${TagName}`));
 
     return (
       <Component index={idx} key={`cnt-cmp-${idx}`} {...blockProperties} />

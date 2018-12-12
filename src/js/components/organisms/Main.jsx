@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Content from './Content';
+import Content from 'organisms/Content/index';
 
 const styles = require('styles/main-cmp.scss');
 

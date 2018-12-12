@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import PreHeader from '../molecules/PreHeader';
-import Logo from '../atoms/Logo';
-import Categories from '../molecules/Categories';
+import PreHeader from 'molecules/PreHeader';
+import Logo from 'atoms/Logo';
+import Categories from 'molecules/Categories';
 
 const styles = require('styles/header-cmp.scss');
 
@@ -11,7 +11,7 @@ console.log('Header - scss: ', styles);
 
 const Header = ({ page, preHeader, categories }) => (
   <header className={styles['root']} id={`hdr-cmp-${page}`}>
-    <PreHeader name={`websites-nav-cmp-${page}`} {...preHeader} />
+    <PreHeader name={`preheader-nav-cmp-${page}`} {...preHeader} />
     <Logo />
     <Categories name={`cat-nav-cmp-${page}`} {...categories} />
   </header>

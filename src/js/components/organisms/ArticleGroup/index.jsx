@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Article from './Article';
+import Article from 'organisms/Article';
 
-const styles = require('styles/article-group-cmp.scss');
+const styles = require('./article-group-cmp');
 
 console.log('ArticleGroup - scss: ', styles);
 
