@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 import { Parser } from 'html-to-react';
 import { subtract } from './math';
 
+const logoImage = require('images/js.png');
 const dogImage = require('../../templates/dog-image.html');
-const logoImage = require('../../assets/images/js.png');
 
 const htmlToReactParser = new Parser();
 
-const styles = require('../../scss/components/demo-content.scss');
+const styles = require('./demo-content');
 
 console.log('DemoContent - scss: ', styles);
 

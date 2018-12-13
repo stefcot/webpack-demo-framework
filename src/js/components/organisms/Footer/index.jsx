@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Links from 'molecules/Links';
 
-const styles = require('styles/footer-cmp.scss');
+const styles = require('./footer-cmp');
 
 console.log('Footer - scss: ', styles);
 

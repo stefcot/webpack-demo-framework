@@ -1,14 +1,14 @@
 import React from 'react';
 
 import Header from 'organisms/Header';
-import Main from 'organisms/Main/Main';
+import Main from 'organisms/Main';
 import Aside from 'organisms/Aside';
 import Footer from 'organisms/Footer';
-import Box from 'molecules/Box/index';
+import Box from 'molecules/Box';
 
-const styles = require('styles/page-cmp.scss');
+const styles = require('./cat-pg-cmp');
 
-const Page = ({ page, header, main, children, footer }) => (
+const Category = ({ page, header, main, children, footer }) => (
   <div className={styles['root']} id={page}>
     <Header page={page} {...header} />
     {children}
@@ -45,4 +45,4 @@ const Page = ({ page, header, main, children, footer }) => (
   </div>
 );
 
-export default Page;
+export default Category;

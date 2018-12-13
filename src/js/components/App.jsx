@@ -1,12 +1,12 @@
 import React from 'react';
 
 import BannerSlot from 'atoms/BannerSlot';
-import Page from './Page';
+import Category from 'templates/Category';
 
 const App = props => (
-  <Page name="Home" {...props}>
+  <Category name="accueil" {...props}>
     <BannerSlot />
-  </Page>
+  </Category>
 );
 
 export default App;
