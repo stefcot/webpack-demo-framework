@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Article from 'organisms/Article';
 
-const styles = require('./article-group-cmp');
+const styles = require('./ArticleGroup.skin');
 
 console.log('ArticleGroup - scss: ', styles);
 

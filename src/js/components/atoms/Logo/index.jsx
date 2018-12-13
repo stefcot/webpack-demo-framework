@@ -3,7 +3,7 @@ import ie from 'ie-version';
 
 import SvgLogo from 'images/logo.svg';
 
-const styles = require('./logo-cmp');
+const styles = require('./Logo.skin');
 
 const Logo = () => (
   <h1

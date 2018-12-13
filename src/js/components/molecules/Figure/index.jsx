@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import Image from 'atoms/Image';
 import { IconFactory, IconList } from 'utils/IconFactory';
 
-const styles = require('./figure-cmp');
+const styles = require('./Figure.skin');
 
 console.log('Figure - scss: ', styles);
 

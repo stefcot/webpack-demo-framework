@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Content from 'organisms/Content/index';
 
-const styles = require('./main-cmp.scss');
+const styles = require('./Main.skin');
 
 const Main = ({ name, page, content, children }) => (
   <main className={styles['root']} id={name}>

@@ -6,7 +6,7 @@ import Aside from 'organisms/Aside';
 import Footer from 'organisms/Footer';
 import Box from 'molecules/Box';
 
-const styles = require('./cat-pg-cmp');
+const styles = require('./Category.skin');
 
 const Category = ({ page, header, main, children, footer }) => (
   <div className={styles['root']} id={page}>

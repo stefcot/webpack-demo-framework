@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Parser } from 'html-to-react';
 
-const styles = require('./box-cmp');
+const styles = require('./Box.skin');
 
 const htmlToReactParser = new Parser();
 

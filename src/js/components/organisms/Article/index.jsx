@@ -5,7 +5,7 @@ import Figure from 'molecules/Figure';
 import Related from 'molecules/Related';
 
 const htmlToReactParser = new Parser();
-const styles = require('./article-cmp.scss');
+const styles = require('./Article.skin.scss');
 
 console.log('Article - scss: ', styles);
 

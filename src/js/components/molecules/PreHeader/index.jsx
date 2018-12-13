@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Links from 'molecules/Links';
 
-const styles = require('./preheader-cmp');
+const styles = require('./PreHeader.skin');
 
 console.log('PreHeader - scss: ', styles);
 

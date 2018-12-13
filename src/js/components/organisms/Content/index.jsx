@@ -2,7 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import PropTypes from 'prop-types';
 import Loader from 'atoms/Loader';
 
-const styles = require('./content-cmp');
+const styles = require('./Content.skin');
 
 console.log('Content - styles: ', styles);
 

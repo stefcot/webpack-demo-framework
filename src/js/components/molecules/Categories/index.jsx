@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Links from 'molecules/Links';
 
-const styles = require('./categories-cmp');
+const styles = require('./Categories.skin');
 
 const Categories = ({ page, nav }) => (
   <nav

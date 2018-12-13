@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Parser } from 'html-to-react';
 import { IconList, IconFactory } from 'utils/IconFactory';
 
-const styles = require('./link-cmp');
+const styles = require('./Link.skin');
 
 const htmlToReactParser = new Parser();
 

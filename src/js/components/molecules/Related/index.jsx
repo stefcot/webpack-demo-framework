@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import { IconFactory, IconList } from '../../../utils/IconFactory';
 
 const htmlToReactParser = new Parser();
-const styles = require('./related-cmp');
+const styles = require('./Related.skin');
 
 console.log('Related - scss: ', styles);
 
