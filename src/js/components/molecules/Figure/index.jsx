@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Image from 'atoms/Image';
-import { IconFactory, IconList } from '../../../utils/IconFactory';
+import { IconFactory, IconList } from 'utils/IconFactory';
 
 const styles = require('./figure-cmp');
 

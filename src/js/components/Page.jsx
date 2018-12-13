@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from 'organisms/Header';
-import Main from 'organisms/Main';
+import Main from 'organisms/Main/Main';
 import Aside from 'organisms/Aside';
 import Footer from 'organisms/Footer';
 import Box from 'molecules/Box/index';

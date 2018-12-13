@@ -1,7 +1,7 @@
 import React from 'react';
 
+import BannerSlot from 'atoms/BannerSlot';
 import Page from './Page';
-import BannerSlot from './atoms/BannerSlot';
 
 const App = props => (
   <Page name="Home" {...props}>

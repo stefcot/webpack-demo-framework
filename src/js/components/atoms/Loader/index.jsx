@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const styles = require('styles/loader-cmp.scss');
+const styles = require('./loader-cmp');
 
 console.log('Loader - scss: ', styles);
 
