@@ -4,7 +4,7 @@ import Header from 'organisms/Header';
 import Main from 'organisms/Main';
 import Aside from 'organisms/Aside';
 import Footer from 'organisms/Footer';
-import Box from 'molecules/Box';
+import Box from 'molecules/Box/index';
 
 const styles = require('styles/page-cmp.scss');
 

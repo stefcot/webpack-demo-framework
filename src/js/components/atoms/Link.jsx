@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Parser } from 'html-to-react';
-import { IconList, IconFactory } from '../../utils/IconFactory';
+import { IconList, IconFactory } from 'utils/IconFactory';
 
-const styles = require('styles/link-cmp.scss');
+const styles = require('styles/link-cmp');
 
 const htmlToReactParser = new Parser();
 
-const Link = ({ type, icon, label, url }) => (
+const Link = ({ icon, label, url, type }) => (
   <li
     className={styles['root']}
     id={`${type}-${Math.round(Math.random() * 100)}`}

@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Parser } from 'html-to-react';
 import classNames from 'classnames';
-import { IconFactory, IconList } from '../../utils/IconFactory';
+import { IconFactory, IconList } from '../../../utils/IconFactory';
 
 const htmlToReactParser = new Parser();
-const styles = require('styles/related-cmp.scss');
+const styles = require('./related-cmp');
 
 console.log('Related - scss: ', styles);
 

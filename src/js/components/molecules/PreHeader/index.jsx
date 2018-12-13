@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Links from './Links';
+import Links from 'molecules/Links';
 
-const styles = require('styles/preheader-cmp.scss');
+const styles = require('./preheader-cmp');
 
 console.log('PreHeader - scss: ', styles);
 

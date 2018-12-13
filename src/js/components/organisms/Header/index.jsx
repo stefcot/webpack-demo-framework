@@ -5,7 +5,7 @@ import PreHeader from 'molecules/PreHeader';
 import Logo from 'atoms/Logo';
 import Categories from 'molecules/Categories';
 
-const styles = require('styles/header-cmp.scss');
+const styles = require('./header-cmp');
 
 console.log('Header - scss: ', styles);
 

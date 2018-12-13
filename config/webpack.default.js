@@ -26,6 +26,7 @@ module.exports = env => {
         molecules: path.resolve(__dirname, '../src/js/components/molecules'),
         organisms: path.resolve(__dirname, '../src/js/components/organisms'),
         templates: path.resolve(__dirname, '../src/js/components/templates'),
+        utils: path.resolve(__dirname, '../src/js/utils'),
         images: path.resolve(__dirname, '../src/assets/images'),
         svg: path.resolve(__dirname, '../src/assets/svg'),
         fonts: path.resolve(__dirname, '../src/assets/fonts')

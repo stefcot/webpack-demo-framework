@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Links from 'molecules/Links';
 
-import Links from './Links';
-
-const styles = require('styles/categories-cmp.scss');
+const styles = require('./categories-cmp');
 
 const Categories = ({ page, nav }) => (
   <nav

@@ -4,7 +4,7 @@ import Loader from 'atoms/Loader';
 
 const styles = require('./content-cmp');
 
-console.log('Content - scss: ', styles);
+console.log('Content - styles: ', styles);
 
 class Content extends React.Component {
   static getComponentByName(blockProperties, idx) {

@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from '../atoms/Link';
+import Link from 'atoms/Link';
 
-const styles = require('styles/links-cmp.scss');
+const styles = require('./links-cmp');
 
 console.log('Links - scss: ', styles);
 

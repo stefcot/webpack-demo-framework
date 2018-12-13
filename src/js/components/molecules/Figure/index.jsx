@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import Image from '../atoms/Image';
-import { IconFactory, IconList } from '../../utils/IconFactory';
+import Image from 'atoms/Image';
+import { IconFactory, IconList } from '../../../utils/IconFactory';
 
-const styles = require('styles/figure-cmp.scss');
+const styles = require('./figure-cmp');
 
 console.log('Figure - scss: ', styles);
 
