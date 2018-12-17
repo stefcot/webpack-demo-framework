@@ -9,6 +9,13 @@
     "browser": true,
     "node": true
   },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/all",
+    "airbnb",
+    "prettier",
+    "prettier/react"
+  ],
   "globals": {
     "window": true,
     "document": true,
@@ -18,13 +25,6 @@
     "Blob": true,
     "navigator": true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/all",
-    "airbnb",
-    "prettier",
-    "prettier/react"
-  ],
   "plugins": [
     "react",
     "prettier"
