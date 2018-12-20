@@ -2,11 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Parser } from 'html-to-react';
 
-const styles = require('./Box.skin');
+const styles = require('./Box.skin.scss');
 
 const htmlToReactParser = new Parser();
-
-console.log('Box - scss: ', styles);
 
 const Box = ({ name, title, description, children }) => (
   <article className={styles['root']} id={name}>
