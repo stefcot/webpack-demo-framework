@@ -1,3 +1,5 @@
+*DStore
+*.DStore
 .idea
 .idea/*
 dist
