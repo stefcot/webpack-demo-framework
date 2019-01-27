@@ -7,7 +7,7 @@ const config = require('./webpack.config.js')();
 // generate a config package with our config
 const compiler = webpack(config);
 
-// create a config dev server, feed it with the config config
+// create a config dev server, feed it with the webpack config file
 const server = new WebpackDevServer(compiler, {
   hot: true,
   filename: config.output.filename,

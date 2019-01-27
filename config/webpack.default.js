@@ -9,7 +9,7 @@ module.exports = env => {
   return {
     entry: {
       vendor: ['jquery'],
-      app: [path.resolve(__dirname, '../src/js/index.js')]
+      app: path.resolve(__dirname, '../src/js/index.js')
     },
     output: {
       filename: '[name].js',
